@@ -262,7 +262,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'Hiyabo'
+        tl_admin_user = 'nautaii'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -713,8 +713,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = '<b>💻Bot: Moodle Wachu Venta 1 V7.1</b>\n'
-            start_msg+= '<b>📭Desarrollador: @Wachu985</b>\n'
+            start_msg = '<b>💻Bot: Moodle V_10</b>\n'
+            start_msg+= '<b>📭Desarrollador: @nautaii</b>\n'
             start_msg+= '<b>📌Guia: </b> <a href="https://nube.reduc.edu.cu/index.php/s/L9WMzC56ZgTZo6b/download/Tutorial%20R%C3%A1pido%20.mp4">AQUI</a>\n'
             start_msg+= '<b>🚨Uso: Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)</b>\n'
             bot.editMessageText(message,start_msg,parse_mode='html')
@@ -829,9 +829,9 @@ def onmessage(update,bot:ObigramClient):
             #    bot_token = os.environ.get('bot_token')
             #    
                 # set in debug
-            #    api_id = 7386053
-            #    api_hash = '78d1c032f3aa546ff5176d9ff0e7f341'
-            #    bot_token = '5368553521:AAF7_CNTx_sttqCb08At0S-gBT-cxpEdlyk'
+            #    api_id = 14681595
+            #    api_hash = 'a86730aab5c59953c424abb4396d32d5'
+            #    bot_token = '5561260685:AAHrxZCeDRn9N0lanNFx63hYoVYhL3Il9JQ'
 
             #    chat_id = int(update.message.chat.id)
             #    message_id = int(update.message.message_id)
@@ -846,7 +846,7 @@ def onmessage(update,bot:ObigramClient):
 def main():
     bot_token = os.environ.get('bot_token')
     #set in debug
-    bot_token = '5368553521:AAF7_CNTx_sttqCb08At0S-gBT-cxpEdlyk'
+    bot_token = '5561260685:AAHrxZCeDRn9N0lanNFx63hYoVYhL3Il9JQ'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
